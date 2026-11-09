@@ -1,0 +1,20 @@
+{
+  "theme": "base",
+  "look": "classic",
+  "layout": "elk",
+  "fontFamily": "Segoe UI, Arial, sans-serif",
+  "themeVariables": {
+    "darkMode": true,
+    "lineColor": "#a8c6ee",
+    "primaryTextColor": "#0f172a",
+    "textColor": "#0f172a",
+    "edgeLabelBackground": "#17243a"
+  },
+  "themeCSS": ".relationshipLine { stroke-width: 2.2px !important; } .marker { stroke-width: 1.5px !important; } .edgeLabel .labelBkg { background-color: #17243a !important; color: #f8fafc !important; }",
+  "er": {
+    "fontSize": 13,
+    "nodeSpacing": 45,
+    "rankSpacing": 65,
+    "diagramPadding": 20
+  }
+}
