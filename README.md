@@ -1,13 +1,21 @@
 # SQL DER
 
-Ejemplo de un diagrama entidad-relación (DER) hecho en **Mermaid**. El diseño combina bordes de neón con una cuadrícula de **3 columnas × 5 filas**. Usa 15 tablas ficticias de un sistema académico y 16 relaciones.
+Skill reutilizable para crear y mejorar diagramas entidad-relación (DER) en **Mermaid**. El diseño combina bordes de neón con una cuadrícula de **3 columnas × 5 filas**. Usa 15 tablas ficticias de un sistema académico y 16 relaciones.
 
 ## Archivos
 
 | Archivo | Contenido |
 | --- | --- |
+| [`SKILL.md`](SKILL.md) | Instrucciones para que un agente construya y revise relaciones nativas de Mermaid y conserve el diseño acordado. |
 | [`ejemplo-der-neon.mmd`](ejemplo-der-neon.mmd) | Código completo del último ejemplo, con el diseño neón, las tablas y las relaciones nativas de `erDiagram`. |
 | [`config.json`](config.json) | Copia del JSON que estaba en la pestaña **Config** de Mermaid Live Editor al guardar el ejemplo. |
+
+## Usar como skill o prompt
+
+- Si tu agente admite skills, carga este repositorio como una carpeta llamada `sql-der` en la ubicación de skills que use tu herramienta. La entrada es `SKILL.md`.
+- Como prompt, comparte `SKILL.md` con el agente y adjunta tu esquema. Si quieres el estilo neón en cuadrícula, incluye también `ejemplo-der-neon.mmd`.
+
+> Usa la skill sql-der con este esquema. Genera un DER en Mermaid con relaciones PK/FK, cardinalidades claras y el estilo neón del ejemplo. Dame un bloque completo para pegar en Mermaid Live Editor.
 
 ## Abrir el ejemplo
 
