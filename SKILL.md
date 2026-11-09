@@ -17,8 +17,10 @@ Entrega un bloque completo de Mermaid que se pueda pegar en **Code**. Integra la
 ## Estilo y distribución
 
 - Para el estilo neón y las posiciones fijas, abre [ejemplo-der-neon.mmd](ejemplo-der-neon.mmd). Ahí están los cuatro acentos, las esquinas curvas y el ejemplo de 15 tablas en 3 × 5 con relaciones nativas.
-- Si se pide una cuadrícula, conserva las posiciones ya aprobadas. Traza las conexiones por los pasillos entre tablas. Ajusta solo el espacio necesario para las etiquetas y los símbolos.
+- Para ajustar los recuadros, mide en el SVG renderizado el contenido visible de cada tabla, incluido el encabezado, las filas y las divisiones. Da a cada contorno el ancho y alto de su propio contenido más un margen interior corto y uniforme. Conserva el tamaño del texto.
+- Si se pide una cuadrícula, conserva el orden aprobado y alinea las tablas por fila y columna. Usa el mayor ancho de cada columna y el mayor alto de cada fila para calcular la separación. Mantén las dimensiones individuales de cada recuadro.
+- Después de ajustar los recuadros, vuelve a colocar los extremos de las conexiones en sus bordes y sitúa las etiquetas y símbolos en los pasillos. Comprueba que las líneas eviten el interior de otras tablas.
 - El ejemplo fija posiciones y recorridos con `themeCSS` en Mermaid 12.2.0. Los selectores de los recorridos siguen el orden de las relaciones. Al agregar, quitar o reordenar una relación, verifica su recorrido y la posición de su etiqueta. Recalcula las posiciones cuando cambie el tamaño de las tablas.
-- Renderiza el resultado si tienes acceso al motor. Comprueba el número de tablas y relaciones, las cardinalidades, las claves de destino y el espacio entre etiquetas y tablas. Si solo puedes revisar el código, indica el alcance de la revisión.
+- Renderiza el resultado si tienes acceso al motor. Comprueba el número de tablas y relaciones, las cardinalidades, las claves de destino, que todos los campos queden dentro de su recuadro y que las etiquetas se lean sin solaparse. Si solo puedes revisar el código, indica el alcance de la revisión.
 
 [Guía de lectura y uso del ejemplo](README.md)

@@ -1,6 +1,6 @@
 # SQL DER
 
-Skill reutilizable para crear y mejorar diagramas entidad-relación (DER) en **Mermaid**. El diseño combina bordes de neón con una cuadrícula de **3 columnas × 5 filas**. Usa 15 tablas ficticias de un sistema académico y 16 relaciones.
+Skill reutilizable para crear y mejorar diagramas entidad-relación (DER) en **Mermaid**. El diseño combina bordes de neón con una cuadrícula de **3 columnas × 5 filas**. Usa 15 tablas ficticias de un sistema académico y 16 relaciones. Cada recuadro se ajusta al ancho y alto de sus campos con un margen corto, y las filas y columnas conservan su alineación.
 
 ## Archivos
 
@@ -31,6 +31,6 @@ Skill reutilizable para crear y mejorar diagramas entidad-relación (DER) en **M
 - Los extremos muestran la cardinalidad. En `Estudiantes ||..o{ Matriculas`, cada matrícula pertenece a un estudiante y cada estudiante puede tener cero o muchas matrículas. En `Pagos ||..o| Recibos`, un pago puede tener cero o un recibo.
 - Las tablas conservan el orden de la cuadrícula. Las relaciones cortas pasan por los espacios entre tablas y la que une **Matrículas** con **Resultados** recorre el pasillo entre columnas.
 
-El encabezado YAML fija los colores, las posiciones y los recorridos. Si agregas o reordenas relaciones, revisa sus selectores CSS numerados para que los recorridos sigan correspondiendo con sus conexiones.
+El encabezado YAML fija los colores, las posiciones y los recorridos. Si agregas o reordenas relaciones, revisa sus selectores CSS numerados para que los recorridos sigan correspondiendo con sus conexiones. Si cambias los campos de una tabla, mide su contenido de nuevo y ajusta el contorno, las conexiones y las etiquetas que la rodean.
 
 [Documentación de diagramas entidad-relación de Mermaid](https://mermaid.js.org/syntax/entityRelationshipDiagram.html)

@@ -31,56 +31,71 @@ config:
     .node .name foreignObject { overflow: visible; }
     .relationshipLine { stroke-width: 2px !important; }
     .edgeLabel .labelBkg { background-color: #152338 !important; color: #e2e8f0 !important; }
-    .node .outer-path path { d: path("M-126 -114 H126 Q138 -114 138 -102 V102 Q138 114 126 114 H-126 Q-138 114 -138 102 V-102 Q-138 -114 -126 -114 Z"); }
     .node .row-rect-odd path, .node .row-rect-even path { fill: none !important; stroke: none !important; }
     .relationshipLine { stroke-dasharray: 5 4 !important; stroke-linecap: round; }
-    .node[id*="-entity-Campus-"] { transform: translate(158px, 134px); }
-    .node[id*="-entity-Edificios-"] { transform: translate(526px, 134px); }
-    .node[id*="-entity-Aulas-"] { transform: translate(894px, 134px); }
-    .node[id*="-entity-Carreras-"] { transform: translate(158px, 399px); }
-    .node[id*="-entity-Planes-"] { transform: translate(526px, 399px); }
-    .node[id*="-entity-Cursos-"] { transform: translate(894px, 399px); }
-    .node[id*="-entity-Estudiantes-"] { transform: translate(158px, 664px); }
-    .node[id*="-entity-Matriculas-"] { transform: translate(526px, 664px); }
-    .node[id*="-entity-Secciones-"] { transform: translate(894px, 664px); }
-    .node[id*="-entity-Becas-"] { transform: translate(158px, 929px); }
-    .node[id*="-entity-Pagos-"] { transform: translate(526px, 929px); }
-    .node[id*="-entity-Evaluaciones-"] { transform: translate(894px, 929px); }
-    .node[id*="-entity-Convocatorias-"] { transform: translate(158px, 1194px); }
-    .node[id*="-entity-Recibos-"] { transform: translate(526px, 1194px); }
-    .node[id*="-entity-Resultados-"] { transform: translate(894px, 1194px); }
-    .relationshipLine[data-id$="_0"] { d: path("M 296 134 L 388 134"); }
-    g.edgeLabel:has(.label[data-id$="_0"]) { transform: translate(342px, 119px); }
-    .relationshipLine[data-id$="_1"] { d: path("M 664 134 L 756 134"); }
-    g.edgeLabel:has(.label[data-id$="_1"]) { transform: translate(710px, 119px); }
-    .relationshipLine[data-id$="_2"] { d: path("M 158 248 L 158 285"); }
-    g.edgeLabel:has(.label[data-id$="_2"]) { transform: translate(209px, 266.5px); }
-    .relationshipLine[data-id$="_3"] { d: path("M 296 399 L 388 399"); }
-    g.edgeLabel:has(.label[data-id$="_3"]) { transform: translate(342px, 384px); }
-    .relationshipLine[data-id$="_4"] { d: path("M 664 399 L 756 399"); }
-    g.edgeLabel:has(.label[data-id$="_4"]) { transform: translate(710px, 384px); }
-    .relationshipLine[data-id$="_5"] { d: path("M 158 513 L 158 550"); }
-    g.edgeLabel:has(.label[data-id$="_5"]) { transform: translate(209px, 531.5px); }
-    .relationshipLine[data-id$="_6"] { d: path("M 296 664 L 388 664"); }
-    g.edgeLabel:has(.label[data-id$="_6"]) { transform: translate(342px, 649px); }
-    .relationshipLine[data-id$="_7"] { d: path("M 894 513 L 894 550"); }
-    g.edgeLabel:has(.label[data-id$="_7"]) { transform: translate(945px, 531.5px); }
-    .relationshipLine[data-id$="_8"] { d: path("M 756 664 L 664 664"); }
-    g.edgeLabel:has(.label[data-id$="_8"]) { transform: translate(710px, 649px); }
-    .relationshipLine[data-id$="_9"] { d: path("M 158 778 L 158 815"); }
-    g.edgeLabel:has(.label[data-id$="_9"]) { transform: translate(209px, 796.5px); }
-    .relationshipLine[data-id$="_10"] { d: path("M 526 778 L 526 815"); }
-    g.edgeLabel:has(.label[data-id$="_10"]) { transform: translate(577px, 796.5px); }
-    .relationshipLine[data-id$="_11"] { d: path("M 894 778 L 894 815"); }
-    g.edgeLabel:has(.label[data-id$="_11"]) { transform: translate(945px, 796.5px); }
-    .relationshipLine[data-id$="_12"] { d: path("M 158 1080 L 158 1043"); }
-    g.edgeLabel:has(.label[data-id$="_12"]) { transform: translate(209px, 1061.5px); }
-    .relationshipLine[data-id$="_13"] { d: path("M 526 1043 L 526 1080"); }
-    g.edgeLabel:has(.label[data-id$="_13"]) { transform: translate(577px, 1061.5px); }
-    .relationshipLine[data-id$="_14"] { d: path("M 894 1043 L 894 1080"); }
-    g.edgeLabel:has(.label[data-id$="_14"]) { transform: translate(945px, 1061.5px); }
-    .relationshipLine[data-id$="_15"] { d: path("M 664 699 H 701 Q 710 699 710 708 V 1185 Q 710 1194 719 1194 H 756"); }
-    g.edgeLabel:has(.label[data-id$="_15"]) { transform: translate(710px, 1107px); }
+    .relationshipLine.edge-pattern-solid { stroke-dasharray: none !important; }
+    .node[id*="-entity-Campus-"] { transform: translate(168px, 120px); }
+    .node[id*="-entity-Campus-"] .outer-path path { d: path("M -90 -96 H 90 Q 104 -96 104 -82 V 82 Q 104 96 90 96 H -90 Q -104 96 -104 82 V -82 Q -104 -96 -90 -96 Z"); }
+    .node[id*="-entity-Edificios-"] { transform: translate(528px, 120px); }
+    .node[id*="-entity-Edificios-"] .outer-path path { d: path("M -98 -96 H 98 Q 112 -96 112 -82 V 82 Q 112 96 98 96 H -98 Q -112 96 -112 82 V -82 Q -112 -96 -98 -96 Z"); }
+    .node[id*="-entity-Aulas-"] { transform: translate(880px, 120px); }
+    .node[id*="-entity-Aulas-"] .outer-path path { d: path("M -98 -96 H 98 Q 112 -96 112 -82 V 82 Q 112 96 98 96 H -98 Q -112 96 -112 82 V -82 Q -112 -96 -98 -96 Z"); }
+    .node[id*="-entity-Carreras-"] { transform: translate(168px, 360px); }
+    .node[id*="-entity-Carreras-"] .outer-path path { d: path("M -98 -96 H 98 Q 112 -96 112 -82 V 82 Q 112 96 98 96 H -98 Q -112 96 -112 82 V -82 Q -112 -96 -98 -96 Z"); }
+    .node[id*="-entity-Planes-"] { transform: translate(528px, 360px); }
+    .node[id*="-entity-Planes-"] .outer-path path { d: path("M -98 -96 H 98 Q 112 -96 112 -82 V 82 Q 112 96 98 96 H -98 Q -112 96 -112 82 V -82 Q -112 -96 -98 -96 Z"); }
+    .node[id*="-entity-Cursos-"] { transform: translate(880px, 360px); }
+    .node[id*="-entity-Cursos-"] .outer-path path { d: path("M -90 -96 H 90 Q 104 -96 104 -82 V 82 Q 104 96 90 96 H -90 Q -104 96 -104 82 V -82 Q -104 -96 -90 -96 Z"); }
+    .node[id*="-entity-Estudiantes-"] { transform: translate(168px, 616px); }
+    .node[id*="-entity-Estudiantes-"] .outer-path path { d: path("M -98 -96 H 98 Q 112 -96 112 -82 V 82 Q 112 96 98 96 H -98 Q -112 96 -112 82 V -82 Q -112 -96 -98 -96 Z"); }
+    .node[id*="-entity-Matriculas-"] { transform: translate(528px, 616px); }
+    .node[id*="-entity-Matriculas-"] .outer-path path { d: path("M -106 -112 H 106 Q 120 -112 120 -98 V 98 Q 120 112 106 112 H -106 Q -120 112 -120 98 V -98 Q -120 -112 -106 -112 Z"); }
+    .node[id*="-entity-Secciones-"] { transform: translate(880px, 616px); }
+    .node[id*="-entity-Secciones-"] .outer-path path { d: path("M -90 -96 H 90 Q 104 -96 104 -82 V 82 Q 104 96 90 96 H -90 Q -104 96 -104 82 V -82 Q -104 -96 -90 -96 Z"); }
+    .node[id*="-entity-Becas-"] { transform: translate(168px, 872px); }
+    .node[id*="-entity-Becas-"] .outer-path path { d: path("M -130 -96 H 130 Q 144 -96 144 -82 V 82 Q 144 96 130 96 H -130 Q -144 96 -144 82 V -82 Q -144 -96 -130 -96 Z"); }
+    .node[id*="-entity-Pagos-"] { transform: translate(528px, 872px); }
+    .node[id*="-entity-Pagos-"] .outer-path path { d: path("M -114 -96 H 114 Q 128 -96 128 -82 V 82 Q 128 96 114 96 H -114 Q -128 96 -128 82 V -82 Q -128 -96 -114 -96 Z"); }
+    .node[id*="-entity-Evaluaciones-"] { transform: translate(880px, 872px); }
+    .node[id*="-entity-Evaluaciones-"] .outer-path path { d: path("M -114 -96 H 114 Q 128 -96 128 -82 V 82 Q 128 96 114 96 H -114 Q -128 96 -128 82 V -82 Q -128 -96 -114 -96 Z"); }
+    .node[id*="-entity-Convocatorias-"] { transform: translate(168px, 1128px); }
+    .node[id*="-entity-Convocatorias-"] .outer-path path { d: path("M -82 -96 H 82 Q 96 -96 96 -82 V 82 Q 96 96 82 96 H -82 Q -96 96 -96 82 V -82 Q -96 -96 -82 -96 Z"); }
+    .node[id*="-entity-Recibos-"] { transform: translate(528px, 1128px); }
+    .node[id*="-entity-Recibos-"] .outer-path path { d: path("M -106 -96 H 106 Q 120 -96 120 -82 V 82 Q 120 96 106 96 H -106 Q -120 96 -120 82 V -82 Q -120 -96 -106 -96 Z"); }
+    .node[id*="-entity-Resultados-"] { transform: translate(880px, 1128px); }
+    .node[id*="-entity-Resultados-"] .outer-path path { d: path("M -122 -112 H 122 Q 136 -112 136 -98 V 98 Q 136 112 122 112 H -122 Q -136 112 -136 98 V -98 Q -136 -112 -122 -112 Z"); }
+    .relationshipLine[data-id^="id_entity-Campus-"][data-id*="_entity-Edificios-"][data-id$="_0"] { d: path("M 272 120 L 416 120"); }
+    g.edgeLabel:has(.label[data-id^="id_entity-Campus-"][data-id*="_entity-Edificios-"][data-id$="_0"]) { transform: translate(344px, 100px); }
+    .relationshipLine[data-id^="id_entity-Edificios-"][data-id*="_entity-Aulas-"][data-id$="_1"] { d: path("M 640 120 L 768 120"); }
+    g.edgeLabel:has(.label[data-id^="id_entity-Edificios-"][data-id*="_entity-Aulas-"][data-id$="_1"]) { transform: translate(704px, 100px); }
+    .relationshipLine[data-id^="id_entity-Campus-"][data-id*="_entity-Carreras-"][data-id$="_2"] { d: path("M 168 216 L 168 264"); }
+    g.edgeLabel:has(.label[data-id^="id_entity-Campus-"][data-id*="_entity-Carreras-"][data-id$="_2"]) { transform: translate(213.6px, 240px); }
+    .relationshipLine[data-id^="id_entity-Carreras-"][data-id*="_entity-Planes-"][data-id$="_3"] { d: path("M 280 360 L 416 360"); }
+    g.edgeLabel:has(.label[data-id^="id_entity-Carreras-"][data-id*="_entity-Planes-"][data-id$="_3"]) { transform: translate(348px, 340px); }
+    .relationshipLine[data-id^="id_entity-Planes-"][data-id*="_entity-Cursos-"][data-id$="_4"] { d: path("M 640 360 L 776 360"); }
+    g.edgeLabel:has(.label[data-id^="id_entity-Planes-"][data-id*="_entity-Cursos-"][data-id$="_4"]) { transform: translate(708px, 340px); }
+    .relationshipLine[data-id^="id_entity-Carreras-"][data-id*="_entity-Estudiantes-"][data-id$="_5"] { d: path("M 168 456 L 168 520"); }
+    g.edgeLabel:has(.label[data-id^="id_entity-Carreras-"][data-id*="_entity-Estudiantes-"][data-id$="_5"]) { transform: translate(211px, 488px); }
+    .relationshipLine[data-id^="id_entity-Estudiantes-"][data-id*="_entity-Matriculas-"][data-id$="_6"] { d: path("M 280 616 L 408 616"); }
+    g.edgeLabel:has(.label[data-id^="id_entity-Estudiantes-"][data-id*="_entity-Matriculas-"][data-id$="_6"]) { transform: translate(344px, 596px); }
+    .relationshipLine[data-id^="id_entity-Cursos-"][data-id*="_entity-Secciones-"][data-id$="_7"] { d: path("M 880 456 L 880 520"); }
+    g.edgeLabel:has(.label[data-id^="id_entity-Cursos-"][data-id*="_entity-Secciones-"][data-id$="_7"]) { transform: translate(918.4px, 488px); }
+    .relationshipLine[data-id^="id_entity-Secciones-"][data-id*="_entity-Matriculas-"][data-id$="_8"] { d: path("M 776 616 L 648 616"); }
+    g.edgeLabel:has(.label[data-id^="id_entity-Secciones-"][data-id*="_entity-Matriculas-"][data-id$="_8"]) { transform: translate(712px, 596px); }
+    .relationshipLine[data-id^="id_entity-Estudiantes-"][data-id*="_entity-Becas-"][data-id$="_9"] { d: path("M 168 712 L 168 776"); }
+    g.edgeLabel:has(.label[data-id^="id_entity-Estudiantes-"][data-id*="_entity-Becas-"][data-id$="_9"]) { transform: translate(222.1px, 744px); }
+    .relationshipLine[data-id^="id_entity-Matriculas-"][data-id*="_entity-Pagos-"][data-id$="_10"] { d: path("M 528 728 L 528 776"); }
+    g.edgeLabel:has(.label[data-id^="id_entity-Matriculas-"][data-id*="_entity-Pagos-"][data-id$="_10"]) { transform: translate(578.3px, 752px); }
+    .relationshipLine[data-id^="id_entity-Secciones-"][data-id*="_entity-Evaluaciones-"][data-id$="_11"] { d: path("M 880 712 L 880 776"); }
+    g.edgeLabel:has(.label[data-id^="id_entity-Secciones-"][data-id*="_entity-Evaluaciones-"][data-id$="_11"]) { transform: translate(924.6px, 744px); }
+    .relationshipLine[data-id^="id_entity-Convocatorias-"][data-id*="_entity-Becas-"][data-id$="_12"] { d: path("M 168 1032 L 168 968"); }
+    g.edgeLabel:has(.label[data-id^="id_entity-Convocatorias-"][data-id*="_entity-Becas-"][data-id$="_12"]) { transform: translate(229.4px, 1000px); }
+    .relationshipLine[data-id^="id_entity-Pagos-"][data-id*="_entity-Recibos-"][data-id$="_13"] { d: path("M 528 968 L 528 1032"); }
+    g.edgeLabel:has(.label[data-id^="id_entity-Pagos-"][data-id*="_entity-Recibos-"][data-id$="_13"]) { transform: translate(565.6px, 1000px); }
+    .relationshipLine[data-id^="id_entity-Evaluaciones-"][data-id*="_entity-Resultados-"][data-id$="_14"] { d: path("M 880 968 L 880 1016"); }
+    g.edgeLabel:has(.label[data-id^="id_entity-Evaluaciones-"][data-id*="_entity-Resultados-"][data-id$="_14"]) { transform: translate(934.5px, 992px); }
+    .relationshipLine[data-id^="id_entity-Matriculas-"][data-id*="_entity-Resultados-"][data-id$="_15"] { d: path("M 648 650 L 700 650 L 700 1128 L 744 1128"); }
+    g.edgeLabel:has(.label[data-id^="id_entity-Matriculas-"][data-id*="_entity-Resultados-"][data-id$="_15"]) { transform: translate(700px, 992px); }
 ---
 erDiagram
     direction TB
